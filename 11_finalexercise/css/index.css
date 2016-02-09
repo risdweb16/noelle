@@ -1,0 +1,180 @@
+/*BACKGROUND image*/
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	font-family: 'Carrois Gothic';
+	background-image: url("../images/wallpaper.jpg");
+	background-size: 55%;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+}
+
+#main {
+	height: 0%;
+	width: 80%;
+	float: right;
+}
+
+#main object {
+	height: 100%;
+	width: 100%;
+}
+
+/*index column*/
+#index{background-color: #1d7274;
+		opacity: .9;
+		width:20%;
+		height: 100%;
+		float: right;
+		position: fixed;
+		padding-right: 2%;}
+/*name and wintersession class content*/
+#name{font-family: 'Carrois Gothic';
+	padding-top: 15%;
+	padding-left: 10%;
+	padding-right: 2%;
+	padding-bottom: 3em;
+	color: #f2f9f9;
+	cursor: pointer;
+}
+
+/*exercise/Project navigation content*/
+
+ #navigation ul {
+        list-style-type: none;
+    }
+
+    #navigation li {
+        float: center;
+       padding-left: 10%;
+       padding-bottom: 10%;
+    }
+
+        #navigation li a {
+            text-decoration: none;
+            color: #f2f9f9;
+            display:block;
+            width:100%;
+            text-align:left;
+            vertical-align:middle;
+        }
+
+            #navigation li a:visited {
+                text-decoration: none;
+                color: #000000;
+            }
+
+
+    .hideshow {
+        display: none;
+    }
+
+
+
+/*frame column styling*/
+.framecolumn{width: 84%;
+height: 350%;
+	float: right;
+	position: relative;}
+/*universal frame styling*/
+.frame{width: 25%;
+		height:14%;
+		float: left;
+		position: relative;
+		margin-top: 1%;
+		margin-left: 2%;
+		margin-bottom: 1em;}
+
+/*individual frame styling*/
+/*projects*/
+.proj1{background-image: url("../images/frameproj1-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		margin-left: 14%;}
+.proj2{background-image: url("../images/frameproj2-2.png");
+		background-size: 100%;
+		background-repeat: no-repeat;}
+.proj3{background-image: url("../images/frameproj3-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;}
+.proj4{background-image: url("../images/frameproj4-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		margin-left: 14%;}
+
+/*exercise*/
+.exer1{background-image: url("../images/frameexer1-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		}
+
+.exer2{background-image: url("../images/frameexer2-2.png");
+		background-size: 90%;
+		background-repeat: no-repeat;
+		}
+.exer3{background-image: url("../images/frameexer3-2.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+		margin-left: 14%;}
+.exer4{background-image: url("../images/frameexer4-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		}
+.exer5{background-image: url("../images/frameexer5-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;}
+.exer6{background-image: url("../images/frameexer6-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		margin-left: 14%;}
+.exer7{background-image: url("../images/frameexer7-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;
+		}
+.exer8{background-image: url("../images/frameexer8-2.png");
+		background-size: 80%;
+		background-repeat: no-repeat;}
+.exer9{background-image: url("../images/frameexer9-2.png");
+		background-size: 90%;
+		background-repeat: no-repeat;
+		margin-left: 14%;}
+.exer10{background-image: url("../images/frameexer10-2.png");
+		background-size: 90%;
+		background-repeat: no-repeat;
+		}
+
+
+
+
+/*Frame Slideshow styling*/
+/*#framep1block{
+	position: fixed;
+	margin-left: 5%;
+	height: 100%;
+}
+
+.slides {
+	height: 25%;
+	width: 25%;
+}
+
+.slides li {
+	height: 100%;
+}
+
+.slides img {
+	height: 100%;
+}
+
+.slides.active{
+	visibility:visible;
+}*/
