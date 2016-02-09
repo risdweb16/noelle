@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>materials for the trek</title>
+
+  <!--css link-->
+  <link type="text/css" rel="stylesheet" href="css/collectionpg3.css"/>
+
+<!--jsneeded for photoscroll-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+      $('html, body, *').mousewheel(function(e, delta) {
+          // multiplying by 40 is the sensitivity,
+          // increase to scroll faster.
+          this.scrollLeft -= (delta * 40);
+          e.preventDefault();
+      });
+  });
+</script>
+
+
+  <!--font link-->
+ <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<a href="collection.html"><img src="images/arrow.png" id="arrow"
+	  onmouseover="this.src='images/house.png'"
+      onmouseout="this.src='images/arrow.png'"/></a>
+
+<div id="subtext">gather your supplies</div>
+<div id="subsubtext">2015 fall semester textile research /// adventure wear</div>
+
+
+<div id="container">
+
+	<div class="section one"></div>
+	<div class="section two"></div>
+	<div class="section three"></div>
+	<div class="section four"></div>
+	<div class="section five"></div>
+	<div class="section six"></div>
+	<div class="section seven"></div>
+	<div class="section eight"></div>
+	<div class="section nine"></div>
+	<div class="section ten"></div>
+	<div class="section eleven"></div>
+	<div class="section twelve"></div>
+	<div class="section thirteen"></div>
+	<div class="section fourteen"></div>
+	<div class="section fifteen"></div>
+	<div class="section sixteen"></div>
+	<div class="section seventeen"></div>
+
+
+
+	<div class="clear"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wandering Visual Guide</title>
+
+  <!--css link-->
+  <link type="text/css" rel="stylesheet" href="css/collectionpg2.css"/>
+
+  <!--js link-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    $('#save_button').on('click', function() {
+      $('#forget-result').html(0);
+      $('.should_forget').each(function() {
+        $(this).fadeOut(1000);
+      })
+    })
+
+    $('.photo').on('mousedown', function() {
+        cur_box = $(this);
+        cur_box.addClass('draggable');
+
+        $('html').on('mousemove', function(e) {
+            if (doesCollide(cur_box, $('#keep'))) {
+              $('#keep').css('opacity', 1);
+            } else {
+              $('#keep').css('opacity', 0.4);
+            }
+
+            if (doesCollide(cur_box, $('#forget'))) {
+              $('#forget').css('opacity', 1);
+            } else {
+              $('#forget').css('opacity', 0.4);
+            }
+
+            $('.draggable').offset({
+                top: e.pageY - $('.draggable').outerHeight() / 2,
+                left: e.pageX - $('.draggable').outerWidth() / 2
+            });
+        });
+
+
+        e.preventDefault();
+    });
+
+    $('.photo').on('mouseup', function() {
+      $(this).removeClass('draggable');
+      $('html').off('mousemove');
+      $('#keep').css('opacity', 0.4);
+      $('#forget').css('opacity', 0.4);
+
+      collidesWithYes = doesCollide($(this), $('#keep'));
+      collidesWithNo = doesCollide($(this), $('#forget'));
+      previouslyCollideWithYes = $(this).hasClass('should_keep');
+      previouslyCollideWithNo = $(this).hasClass('should_forget');
+
+      if (collidesWithYes) {
+        $(this).addClass('should_keep');
+        if (!previouslyCollideWithYes) $('#keep-result').html(function(i, val) { return +val+1 });
+      } else if (!collidesWithYes){
+        $(this).removeClass('should_keep');
+      	if (previouslyCollideWithYes) $('#keep-result').html(function(i, val) { if (!(val <= 0)) return +val-1 });
+      }
+      if (collidesWithNo) {
+        $(this).addClass('should_forget');
+        if (!previouslyCollideWithNo) $('#forget-result').html(function(i, val) { return +val+1 });
+      } else if (!collidesWithNo) {
+        $(this).removeClass('should_forget');
+      	if (previouslyCollideWithNo) $('#forget-result').html(function(i, val) { if (!(val <= 0)) return +val-1 });
+      }
+    });
+});
+
+function doesCollide(e1, e2) {
+	var top1 = e1.offset().top;
+  var left1 = e1.offset().left;
+  var bottom1 = e1.offset().top + e1.height();
+  var right1 = e1.offset().left + e1.width();
+
+  var top2 = e2.offset().top;
+  var left2 = e2.offset().left;
+  var bottom2 = e2.offset().top + e2.height();
+  var right2 = e2.offset().left + e2.width();
+
+  return !(left2 > right1
+    || right2 < left1
+    || top2 > bottom1
+    || bottom2 < top1
+  );
+}
+</script>
+
+  <!--font link-->
+ <link href='https://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+<a href="collection.html"><img src="images/arrow.png" id="arrow"/
+	  onmouseover="this.src='images/house.png'"
+      onmouseout="this.src='images/arrow.png'"/></a>
+
+<div id="subtext">get your bearings</div>
+<div id="subsubtext">sort & gather what visual material you need, and leave the rest.</div>
+
+<div id="figure3"></div>
+
+<button id="save_button">declutter your ideas</button>
+
+<div id="keep">keep (total: <span id="keep-result">0</span>)</div>
+<div id="forget">forget (total: <span id="forget-result">0</span>)</div>
+
+<div id="photoorg">
+  <img src="images/set1.png" class="photo" id="set1"/>
+  <img src="images/set2.png" class="photo" id="set2"/>
+  <img src="images/set3.png" class="photo" id="set3"/>
+  <img src="images/set4.png" class="photo" id="set4"/>
+  <img src="images/set5.png" class="photo" id="set5"/>
+  <img src="images/set6.png" class="photo" id="set6"/>
+  <img src="images/set7.png" class="photo" id="set7"/>
+  <img src="images/set8.png" class="photo" id="set8"/>
+  <img src="images/set9.png" class="photo" id="set1"/>
+  <img src="images/set10.png" class="photo" id="set2"/>
+  <img src="images/set11.png" class="photo" id="set3"/>
+  <img src="images/set12.png" class="photo" id="set4"/>
+  <img src="images/set13.png" class="photo" id="set5"/>
+  <img src="images/set14.png" class="photo" id="set6"/>
+  <img src="images/set15.png" class="photo" id="set7"/>
+  <img src="images/set16.png" class="photo" id="set8"/>
+  <img src="images/set17.png" class="photo" id="set1"/>
+  <img src="images/set18.png" class="photo" id="set2"/>
+  <img src="images/set19.png" class="photo" id="set3"/>
+  <img src="images/set20.png" class="photo" id="set4"/>
+  <img src="images/set21.png" class="photo" id="set5"/>
+  <img src="images/set22.png" class="photo" id="set6"/>
+  <img src="images/set23.png" class="photo" id="set7"/>
+  <img src="images/set24.png" class="photo" id="set8"/>
+  <img src="images/set25.png" class="photo" id="set1"/>
+  <img src="images/set26.png" class="photo" id="set2"/>
+  <img src="images/set27.png" class="photo" id="set3"/>
+  <img src="images/set28.png" class="photo" id="set4"/>
+  <img src="images/set29.png" class="photo" id="set5"/>
+  <img src="images/set30.png" class="photo" id="set6"/>
+  <img src="images/set31.png" class="photo" id="set1"/>
+  <img src="images/set32.png" class="photo" id="set2"/>
+  <img src="images/set33.png" class="photo" id="set3"/>
+  <img src="images/set34.png" class="photo" id="set4"/>
+</div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+body{background-image: url(../images/backgroundpg3.png);
+  background-color: #a5afba;
+  background-size: 200%;
+background-repeat: repeat;
+overflow-y: hidden; overflow-x: scroll;}
+
+#arrow{float: left;
+        width: 10%;
+        height: 10%;
+        position: relative;}
+
+#subtext{font-size: 20px;
+        font-family:'Didact Gothic';
+        color: #f2edef;
+       position: relative;
+       margin-bottom: 2%;
+       margin-left: 4%;
+     }
+
+/*instructions*/
+#subsubtext{font-size: 14px;
+        font-family:'Didact Gothic';
+        color: #f2edef;
+       position: relative;
+       margin-bottom: 2%;
+       margin-left: 10%;
+     }
+
+/*scroll function styling*/
+* { padding: 0; margin: 0; }
+
+/* #filler { position: absolute; top: 0; left: 0; width: 3900px; height: 100%; } */
+#container { width: 5900px; position: absolute; top: 50%; margin-top: -7%; }
+
+.section {
+  display: block;
+  width: 300px;
+  height: 300px;
+  float: left;
+  margin-left: 20px;
+  opacity: .8;
+  }
+
+.one { background-image: url(../opt_images/set35.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.two { background-image: url(../opt_images/set36.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.three { background-image: url(../opt_images/set37.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.four { background-image: url(../opt_images/set38.jpg);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.five { background-image: url(../images/pic1.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.six { background-image: url(../images/pic2.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.seven { background-image: url(../images/pic3.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.eight { background-image: url(../images/pic4.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.nine { background-image: url(../images/pic5.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.ten { background-image: url(../images/pic6.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.eleven { background-image: url(../images/pic7.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.twelve { background-image: url(../images/pic8.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.thirteen { background-image: url(../images/pic9.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.fourteen { background-image: url(../images/pic10.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.fifteen { background-image: url(../images/pic11.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.sixteen { background-image: url(../images/pic12.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+.seventeen { background-image: url(../images/pic13.png);
+      background-size: 100%;
+      background-repeat: no-repeat;}
+
+
+
+
+
+
+

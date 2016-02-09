@@ -1,0 +1,60 @@
+
+body{background-image: url(../images/background.png);
+  background-color: #25161b;
+  background-size: 200%;
+background-repeat: no-repeat;}
+
+/*Thesis header portion*/
+#header{font-size: 30px;
+        font-family:'Didact Gothic';
+        color: #f2edef;
+       position: relative;
+       margin-top: 5%;
+       margin-bottom: 2%;
+       margin-left: 4%;
+     }
+
+#subtext{font-size: 20px;
+        font-family:'Didact Gothic';
+        color: #f2edef;
+       position: relative;
+       margin-bottom: 2%;
+       margin-left: 4%;
+     }
+
+/*sub button for collection*/
+.circle{padding: 3%;
+        width: 25%;
+        height: 40%;
+      font-family:'Didact Gothic'; 
+      text-align: center;
+       color:#dacad0;
+       opacity: .9;
+       background-color:#25161b; 
+       position: relative;
+       margin-left: 2%;
+      margin-top:11%;
+      margin-right: 2%;
+      border-radius: 100px;
+    padding: 2% 2% 2% 2%;
+    float: left;}
+
+
+
+  /*button for home doodle section*/
+  #homeicon{width: 80%;
+            height: 80%;}
+
+  /*button for wander section*/
+  #stoneicon{width: 80%;
+            height: 80%;}
+
+  /*button for material section*/
+  #shoeicon{width: 80%;
+            height: 80%;
+            opacity: .95}
+
+
+
+
+
